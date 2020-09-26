@@ -22,7 +22,7 @@ a{
 .my_name h1 {
     overflow: hidden;
     white-space: nowrap;
-    color: black;
+    color: white;
     height: 100%;
     display: table-cell;
     border-right: solid 3px transparent;
