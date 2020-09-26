@@ -1,0 +1,109 @@
+
+#page_name{
+    font-size: 48px;
+    margin-left: 10vw;
+    padding-top:2%;
+    margin-top:0;
+    margin-bottom: 0;
+    font-family: Tahoma;
+}
+#resume_pdf{
+    width: 50vw;
+    height: 67vw;
+    margin-left:25%;
+    margin-right:25%;
+    margin-bottom: 5%;
+    margin-top:3%;
+
+}
+#resume_browser{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 1vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+#resume_browser h2{
+    border-bottom: 1px solid black;
+    font-size: 40px;
+}
+#resume_information{
+    text-indent: 5%;
+}
+#resume_browser p{
+    font-size: 20px;
+    padding:0;
+    margin:0;
+}
+#resume_browser b{
+    font-size:25px;
+}
+
+#resume_browser li{
+    font-size: 20px;
+}
+
+
+
+.version_type{
+    padding-left: 10vw;
+}
+.version_type li{
+    display: table-cell;
+    font-size:14px;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+.version_type li:hover{
+    cursor: pointer;
+}
+.version_type li#pdf{
+    padding-left: 5vw;
+}
+#right_stuff{
+    float:right;
+
+}
+@media screen and (max-width:1300px){
+    #resume_pdf{
+        width:80%;
+        height: 100vw;
+        margin-left:10%;
+        margin-right:10%;
+    }
+}
+@media screen and (max-width:600px){
+    #resume_pdf{
+        width:80%;
+        height: 100vw;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    #resume_browser{
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 1vw;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+    }
+    #resume_browser h2{
+        border-bottom: 1px solid black;
+        font-size: 40px;
+    }
+    #resume_information{
+        text-indent: 5%;
+    }
+    #resume_browser p{
+        font-size: 15px;
+        padding:0;
+        margin-left:10px;
+    }
+    #resume_browser b{
+        font-size:22px;
+    }
+    
+    #resume_browser li{
+        font-size: 19px;
+    }
+    
+}

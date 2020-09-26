@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script language="javascript" type="text/javascript" src="common_stuff/head_links.txt"></script>
+        <script src="js/header_load.js"></script>
+        <link rel="stylesheet" href="css/resume.css">
+        <link rel="stylesheet" href="css/common_format.css">
+
+        <title>Resume | Rayven Deray</title>
+    </head>
+    <body onload="change_text_color(); starting();">
+
+        <div class="header">
+                <script language="javascript" type="text/javascript" src="common_stuff/header.txt"></script>
+        </div>
+        <div class="background"></div>
+        <div class="main" id="main">
+            <h1 id="page_name">Resume</h1>
+            <hr color="black" padding-bottom="10%" >
+            <ul class="version_type">
+                <li id="browser" onclick="browser_function()" >Broswer</li>
+                <li id="pdf" onclick="pdf_function()">PDF</li>
+            </ul>
+            <div id="resume_browser" style="display:block;">
+                <h2 id="education">Education</h2>
+                    <div id="education_body">
+                        <p><b>Texas Tech University</b> | Lubbock, TX<span id="right_stuff">Graduation Date: May 2022</span></p>
+                            <p><em>B.S. Computer Science</em><span id="right_stuff" style="font-weight: 700;">GPA: 3.95</span></p>
+                            <p>Honors College</p>
+                        <br>
+                        <p><b>Coleman High School</b> | Coleman, TX<span id="right_stuff">Graduated: May 2018</span></p>
+                            <p>Valedictorian<span id="right_stuff" style="font-weight: 700;">GPA: 3.97 </span></p>
+                    </div>
+                <h2 id="experience">Experience</h2>
+                    <div id="experience_body">
+                        <p><b>South Plains Food Bank</b> | Lubbock, TX</p>
+                        <p><em>Dock Volunteer</em><span id="right_stuff">Jun 2020 - Jul 2020</span></p>
+                            <ul>
+                                <li>Coordinated with other workers to quickly and effectively prepare and handout goods to people in need</li>
+                                <li>Devised strategies in helping lower the lunch rush problems by talking and communicating with teammembers</li>
+                                <li>Actively monitor and assist customers as needed while maintaining COVID-19 precautions and procedures</li>
+                            </ul>
+                        <br>
+                        <p><b>Texas Tech University Student Housing</b> | Lubbock, TX</p>
+                        <p><em>Summer Conferences Staff</em><span id="right_stuff">Jun 2019 - Aug 2019</span></p>
+                            <ul>
+                                <li>Collaborated with dozens of other staff members to properly manage Texas Tech student housing buildings</li>
+                                <li>Demonstrated strong flexibility and problem solving to assist any campers and users of the buildings with their needs</li>
+                                <li>Facilitated changing groups from the building by analyzing patters and implementing efficient strategies</li>
+                            </ul>
+                        <br>
+                        <p><b>Rancho Pizzeria</b> | Coleman, TX</p>
+                        <p><em>Appetizer and Sandwich Chef</em><span id="right_stuff">Jun 2018 - Aug 2018</span></p>
+                            <ul>
+                                <li>Worked thrity or more hours a week in the kitchen under a constant, stenuous workload</li>
+                                <li>Actively collaborated with a small kitchen staff and cafe staff to provide quality service</li>
+                                <li>Displayed strong critical thinking skills to prepare appetizers and dishes efficiently and quickly</li>
+                            </ul>
+                    </div>
+                <h2 id="leadership">Leadership</h2>
+                    <p><b>Association for Computer Machinery Texas Tech Chapter</b></p>
+                    <p><em>Team Member - Pandamonium</em><span id="right_stuff">Sep 2019 - Feb 2020</span></p>
+                    <ul> 
+                        <li>Developed new workplace skills such as pair programming, etiquette, and how a workplace functions</li>
+                        <li>Collaborated with many other teams on differnt ascpects of the project</li>
+                        <li>Main goal was to develop a note sharing app to help student share and access notes easier and faster</li>
+                    </ul>
+                    <p><b>Murray/Caprenter-Wells/Honors Complex Council </b></p>
+                    <p><em>Vice President of Administration and Finance</em><span id="right_stuff">Sept 2018 - May 2019</span></p>
+                    <ul>
+                        <li>Facilitated all internal finances, including a budget totalling over $15,000</li>
+                        <li>Supervised and sponsored various Complex-wide event for social building and bringing the complex together</li>
+                        <li>Implemented administrative changes to improve council efficiency in buying and creating new events</li>
+                    </ul>
+                    <p><b>Abilene Martial Arts Center</b></p>
+                    <p><em>Student and Assistant Instructor</em><span id="right_stuff">Nov 2012 - Aug 2018</span></p>
+                    <ul>
+                        <li>Taught children and adults of various races and backgrounds self-defence and discipline</li>
+                        <li>Demonstrated adaptability in teaching, allowing each student to learn in a way best suited for them</li>
+                        <li>Displayed dedication and quick learning skills rising the ranks quickly and earning my black belt in 2015</li>
+                    </ul>
+            </div>
+            <iframe id="resume_pdf" src="docs/Resume_Website.pdf#&toolbar=1&statusbar=0&messages=0&navpanes=0&scrollbar=0&view=Fit" style="display: none;">Browser does not support PDFs. To view PDF, please download</iframe>
+        </div>
+        <script src="js/resume_type.js"></script>
+
+    </body>
+</html>

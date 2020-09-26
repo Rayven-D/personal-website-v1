@@ -1,0 +1,21 @@
+.background{
+    position: fixed ;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(180deg, #6282e4, #8700f5);     
+    z-index: -10;
+
+}
+.main{
+    overflow-y: auto;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    margin: 0;
+    z-index: -10;
+   
+}
+body{
+    width:100vw;
+    overflow:hidden;
+}

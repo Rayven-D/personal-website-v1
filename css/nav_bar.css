@@ -1,0 +1,228 @@
+
+a{
+    color: black;
+}
+
+.inner_header{
+    width: 1000px;
+    height:80px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.my_name{
+    height: 100%;
+    display: table;
+    float: left;
+    display: flex;
+    justify-content: baseline;
+    
+}
+.my_name h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    color: black;
+    height: 100%;
+    display: table-cell;
+    border-right: solid 3px transparent;
+    margin: 20px; 
+    padding: 0 10px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px; 
+    font-weight: 600;
+    letter-spacing: 2px;
+    height: 40px;
+}
+
+.my_name h1 a {
+    color: black;
+}
+
+/*
+Navigation tabs on the right side.
+*/
+.navigation{
+    height: 100%;
+    text-align: right;
+    
+}
+.navigation a, i{
+    height: 80%;
+    padding: 0 20px;
+} 
+
+
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+
+}
+.navigation a li:hover{
+    color: white;
+}
+.navigation a li::after{
+    content: '';
+    display: block;
+    height: 3px;
+    border-radius: 1in;
+
+    background-color: white;
+    position: absolute;
+
+
+    width: 0%;
+    transition: .25s ease;
+}
+.navigation a li:hover::after{
+    width: 100%;
+
+}
+
+.menu_button{
+    font-size: 30px;
+    display:none;
+    float:right;
+    cursor: pointer;
+}
+
+.leave_menu_button{
+    font-size:30px;
+    display:none;
+    float: right;
+    cursor:pointer;
+}
+
+#chk, #chk_l{
+    visibility: hidden;
+    z-index: -1111;
+}
+
+@media screen and (max-width:1000px){
+    .inner_header{
+        width: 100%;
+    }
+    .menu_button{
+        display:block;
+        margin-top: 22px;
+        position: relative;
+        margin-right:2vw;
+    }
+    .my_name h1{
+        margin-left:0;
+    }
+    .navigation a{
+        visibility: hidden;
+    }
+    #chk:checked ~ .navigation{
+        clear:both;
+        width: auto;
+        height: 100vh;
+        top:60px;
+        right:0;
+        position: absolute;
+        text-align:center;
+        vertical-align: middle;
+        background-color:#4a98cf;
+        padding-bottom: 15px;
+    }
+    #chk:checked ~ .navigation a{
+        margin: 0 auto;
+        width: 88%;
+        margin-left:0;
+        height:15px;
+        right:2vw;
+        font-size: 3vw;
+        vertical-align: middle;
+        visibility: visible;
+        text-align:right;
+        display: table;
+        padding-top: 15px;
+    }
+    #chk:checked ~ .navigation a li{
+        font-size:3vw;
+        padding-right:3vw;
+    }
+    #chk:checked ~ .navigation li::after{
+        display:none;
+    }
+    #reference_button{
+        padding-bottom:
+    }
+
+}
+@media screen and (max-width:600px){
+    .inner_header{
+        width: 100vw;
+        height: 14vw;
+    }
+    .menu_button{
+        top: 1px;
+        margin: 4vw 0;
+        font-size: 6vw;
+        position: absolute;
+        right: 4vw;
+    }
+    .my_name h1{
+        margin: 3vw;
+        padding:0;
+        padding-left: 3vw;
+        font-size: 7.5vw;
+        height: 9vw;
+    }
+    .navigation a{
+        visibility: hidden;
+    }
+    #chk:checked ~ .navigation:not(.leave_menu_button){
+        clear:both;
+        overflow:hidden;
+        width: 95%;
+        height: 100vh;
+        top:0;
+        left:0;
+        margin:0;
+        text-align:center;
+        vertical-align: middle;
+        position: relative;
+        align-items: center;
+        background-color:#4a98cf;
+    }
+    #chk:checked ~ .navigation a{
+        width:80vw;
+        position: flex;
+        vertical-align: middle;
+        visibility: visible;
+        text-align:right;
+        display: table;
+        padding:0;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        margin:0;
+        font-size: 5vw;
+    }
+    #chk:checked ~ .navigation li::after{
+        display:none;
+    }
+    #chk:checked ~ .navigation a li{
+        font-size:5vw;
+        margin-right:0;
+    }
+    
+}
+.header{
+    width:100%;
+    height:auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color:#4a98cf;
+}
