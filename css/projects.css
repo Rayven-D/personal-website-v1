@@ -1,0 +1,93 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.section_title{
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+}
+.project_title{
+    font-size: 200%;
+    text-align: center;
+    width: auto;
+    height: auto;
+    transition: .5s ease;
+}
+.projects{
+    width: 80vw;
+    top:0;
+    margin-left:10vw;
+    margin-top:10vh;
+    display:block;
+    flex-flow: row wrap;
+
+    
+}
+.projects .container{
+    width: 20vw;
+    height: 6vw;
+    margin:auto auto;
+    position: relative;;
+    align-items: center;
+}
+
+.projects .container a{
+    text-decoration: none;
+    
+}
+
+.projects .overlay_text{
+    margin: auto auto;
+    top:-3vw;
+    position: relative;
+
+    height:0;
+    width:0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:#4a98cf;
+    text-align:left;
+    display:block;
+}
+.projects .container:hover + div{
+    opacity:.98;
+    z-index: 2;
+    width: 60vw;
+    height: 40vh;
+    margin: auto auto;
+
+}
+
+.projects .overlay_text:hover{
+    opacity:.98;
+    z-index: 2;
+    width: 60vw;
+    height: 40vh;
+    margin: auto auto;
+}
+
+.projects .container:hover .project_title{
+    color:white;
+}
+
+.overlay_text .overlay_description{
+    font-weight: 700;
+    font-size: 0;
+}
+
+.overlay_text:hover .overlay_description, .container:hover + div .overlay_description{
+    font-size:2vh;
+    transition: .5s ease;
+}
+
+
+
+
+
+
+
+
+
+

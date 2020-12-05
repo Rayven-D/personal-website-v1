@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script language="javascript" type="text/javascript" src="common_stuff/head_links.txt"></script>
+        <script src="js/header_load.js"></script>
+        <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="css/common_format.css">
+        <link rel="icon" type="image/png" href="pictures/logo.png">
+        <title>Projects | Rayven Deray</title>
+    </head>
+    <body onload="starting()">
+        <div class="header" id="header">
+            <script language="javascript" type="text/javascript" src="common_stuff/header.txt"></script>
+        </div>
+        <div class="background"></div>
+        <section class="main" id="main"> 
+            <div class="section_title"><h2>Projects</h2></div>
+            <section class="projects">
+                <div class="container">
+                    <a href="CellSimulation.html"><h3 class="project_title">Cell Simulation</h3></a>
+                </div>  
+                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='CellSimulation.html'">
+                    
+                    <p>
+                        <span class="overlay_description">
+                            The cell simulation is a program that simulates a colony of cells 
+                            growth and deaths. it will be comparing each cell with their neighbors, 
+                            and determining if the cell will die or be alive in the next step, doing 
+                            this to every cell for 100 steps.
+                            This program makes use of multiprocessing to handle the arrays, and
+                            it was tested with 10,000 x 10,000 array size, only taking less than
+                            20 minutes with 36 processes.
+                        </span>
+                    </p>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>

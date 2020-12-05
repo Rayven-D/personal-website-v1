@@ -49,6 +49,16 @@ body{
     margin-top:5vh;
     margin-bottom: 1vh;;
 }
+
+.key_languages{
+    font-size: 1vw;
+    font-weight: 700;
+    margin-left:15vw;
+    margin-top:5vh;
+    margin-bottom: 1vh;
+
+}
+
 .languages{
     width: 80vw;
     margin-left:10vw;
