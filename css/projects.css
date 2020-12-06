@@ -7,7 +7,18 @@ body{
     font-size: 2vw;
     font-weight: 700;
     text-align: center;
+    display: block;
 }
+.section_title h2{
+    margin: 0;
+    margin-top: 2vh;
+}
+
+.section_title sub{
+    font-size: 1vw;
+    margin: 0;
+}
+
 .project_title{
     font-size: 200%;
     text-align: center;
@@ -22,8 +33,6 @@ body{
     margin-top:10vh;
     display:block;
     flex-flow: row wrap;
-
-    
 }
 .projects .container{
     width: 20vw;
@@ -49,7 +58,11 @@ body{
     transition: .5s ease;
     background-color:#4a98cf;
     text-align:left;
-    display:block;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
 }
 .projects .container:hover + div{
     opacity:.98;
@@ -78,9 +91,20 @@ body{
 }
 
 .overlay_text:hover .overlay_description, .container:hover + div .overlay_description{
-    font-size:2vh;
+    font-size:2.5vh;
     transition: .5s ease;
 }
+
+.projects .overlay_text .project_pics{
+    height: 0;
+    width: 0;
+    color: white;
+}
+ .overlay_text:hover .project_pics, .container:hover + div .project_pics{
+     height: 70%;
+     width: 60%;
+     
+ }
 
 
 

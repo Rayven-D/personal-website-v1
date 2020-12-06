@@ -15,24 +15,64 @@
         </div>
         <div class="background"></div>
         <section class="main" id="main"> 
-            <div class="section_title"><h2>Projects</h2></div>
+            <div class="section_title">
+                <h2>Projects</h2><sub>To get more details of each project, click the project name.</sub>
+            </div>
             <section class="projects">
                 <div class="container">
-                    <a href="CellSimulation.html"><h3 class="project_title">Cell Simulation</h3></a>
+                    <a href="work_in_progress.html"><h3 class="project_title">Cell Simulation</h3></a>
                 </div>  
-                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='CellSimulation.html'">
+                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='work_in_progress.html'">
                     
-                    <p>
-                        <span class="overlay_description">
+                    <p class="overlay_description">
                             The cell simulation is a program that simulates a colony of cells 
-                            growth and deaths. it will be comparing each cell with their neighbors, 
-                            and determining if the cell will die or be alive in the next step, doing 
-                            this to every cell for 100 steps.
+                            growth and deaths. It compares each cell with their neighbors to determine
+                            if the cell will die or be alive in the next step, doing 
+                            this to every cell for 100 steps.<br><br>
                             This program makes use of multiprocessing to handle the arrays, and
                             it was tested with 10,000 x 10,000 array size, only taking less than
                             20 minutes with 36 processes.
-                        </span>
+                            <br><br>
+                            
                     </p>
+                    <img class="project_pics"src="pictures/projectpics/CellSim.png" alt="Cell Simuilation Pic" >
+                </div>
+
+                <div class="container">
+                    <a href="work_in_progress.html"><h3 class="project_title">Health Care System</h3></a>
+                </div>  
+                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='work_in_progress.html'">
+                    
+                    <p class="overlay_description">
+                            This project modeled a health care system for making appointments, changing 
+                            patient data, and looking at daily reports. We had to design the software using the specified requirements.
+                            <br><br>
+                            This program makes use of Object-Oriented Programming and using JSON files to store data.
+                            We used Java to create the system, and JSON files as the "database" to store the data needed
+                            needed.
+                            
+                    </p>
+                    <img class="project_pics"src="pictures/projectpics/HealthCareSystem.png" alt="stethoscope" >
+                </div>
+                
+                <div class="container">
+                    <a href="work_in_progress.html"><h3 class="project_title">Bang! The Dice Game</h3></a>
+                </div>  
+                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='work_in_progress.html'">
+                    
+                    <p class="overlay_description">
+                            This project recreated the entire "Bang! The Dice Game" on the computer. We used all the 
+                            original characters, their abilites, the original dice, and the actual rules of the game
+                            <br><br>
+                            This program makes use of Object-Oriented Programming and it's conecpts. We used Java
+                            to create the system. 
+                            <br><br>
+                            <sup class="overlay_description"style="font-size:.75vw;margin:0;">
+                                The program is not meant for distribution or for profit. <br>It was created
+                                for my CS2365 Object-Oriented Programming final project.  
+                            </sup>                          
+                    </p>
+                    <img class="project_pics" src="pictures/projectpics/DiceGame.png" alt="A Die" >
                 </div>
             </section>
         </section>

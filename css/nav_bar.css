@@ -75,7 +75,6 @@ Navigation tabs on the right side.
     display: block;
     height: 3px;
     border-radius: 1in;
-
     background-color: white;
     position: absolute;
 
@@ -154,9 +153,6 @@ Navigation tabs on the right side.
     }
     #chk:checked ~ .navigation li::after{
         display:none;
-    }
-    #reference_button{
-        padding-bottom:
     }
 
 }
