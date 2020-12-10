@@ -4,6 +4,7 @@
         
         <script language="javascript" type="text/javascript" src="common_stuff/head_links.txt"></script>
         <script src="js/header_load.js"></script>
+        <script rel="javascript" src="/js/project_js/common_functions.js"></script>
         <link rel="stylesheet" href="css/projects.css">
         <link rel="stylesheet" href="css/common_format.css">
         <link rel="icon" type="image/png" href="pictures/logo.png">
@@ -15,14 +16,14 @@
         </div>
         <div class="background"></div>
         <section class="main" id="main"> 
-            <div class="section_title">
+            <div class="section_title" id="section_title">
                 <h2>Projects</h2><sub>To get more details of each project, click the project name.</sub>
             </div>
             <section class="projects">
                 <div class="container">
-                    <a href="work_in_progress.html"><h3 class="project_title">Cell Simulation</h3></a>
+                    <a href="CellSimulation.html"><h3 class="project_title">Cell Simulation</h3></a>
                 </div>  
-                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='work_in_progress.html'">
+                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='CellSimulation.html'">
                     
                     <p class="overlay_description">
                             The cell simulation is a program that simulates a colony of cells 
@@ -39,9 +40,9 @@
                 </div>
 
                 <div class="container">
-                    <a href="work_in_progress.html"><h3 class="project_title">Health Care System</h3></a>
+                    <a href="HealthCare.html"><h3 class="project_title">Health Care System</h3></a>
                 </div>  
-                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='work_in_progress.html'">
+                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='HealthCare.html'">
                     
                     <p class="overlay_description">
                             This project modeled a health care system for making appointments, changing 
@@ -56,9 +57,9 @@
                 </div>
                 
                 <div class="container">
-                    <a href="work_in_progress.html"><h3 class="project_title">Bang! The Dice Game</h3></a>
+                    <a href="DiceGame.html"><h3 class="project_title">Bang! The Dice Game</h3></a>
                 </div>  
-                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='work_in_progress.html'">
+                <div class="overlay_text" style="cursor:pointer;" onclick="window.location='DiceGame.html'">
                     
                     <p class="overlay_description">
                             This project recreated the entire "Bang! The Dice Game" on the computer. We used all the 
@@ -76,6 +77,10 @@
                 </div>
 
             </section>
+            <div class="footer">
+                <h3 onclick='scrollToTopFunc("section_title");' style="cursor: pointer;">Back to Top</h3>
+            </div>
         </section>
+        
     </body>
 </html>

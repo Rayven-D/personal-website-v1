@@ -1,0 +1,57 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: context-menu;
+}
+
+
+.project_title h2{
+    margin-top: 2vw;
+    font-size: 3vw;
+    margin-left: 10vw;
+}
+
+.project_description{
+    width:80vw;
+    margin: 0 auto;
+    height:50vh;
+    display:flex;
+}
+
+.project_description .summary{
+    width: 50%;
+    height:100%;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: left;
+}
+
+.project_description .quick_info{
+    width:50%;
+    height:100%;
+    display:table;
+}
+
+.project_description .quick_info p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.project_description .quick_info p span{
+    font-weight: 700;
+}
+
+.sim_rules{
+    width: 80vw;
+    height: 40vw;
+    margin:0 auto;
+    background-color: pink;
+}
+
+.sim_rules h2{
+    font-size: 1.75vw;
+}
+
+.sim_rules p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}

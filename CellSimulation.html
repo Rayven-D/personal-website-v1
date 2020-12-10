@@ -4,7 +4,9 @@
         
         <script language="javascript" type="text/javascript" src="common_stuff/head_links.txt"></script>
         <script src="/js/header_load.js"></script>
-        <link rel="stylesheet" href="/css/projects.css">
+        <script rel="javascript" src="/js/project_js/common_functions.js"></script>
+        <link rel="stylesheet" href="/css/project_css/cellsimulation.css">
+        <link rel="stylesheet" href="/css/project_css/common_project.css">
         <link rel="stylesheet" href="/css/common_format.css">
         <link rel="icon" type="image/png" href="../pictures/logo.png">
         <title>Socials and Links | Rayven Deray</title>
@@ -15,7 +17,54 @@
         </div>
         <div class="background"></div>
         <section class="main" id="main"> 
-            <iframe height="50%" width="800px" src="https://repl.it/@RjDeray/CellSimulationCS3361-6?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            <div class="project_title" id="project_title">
+                <h2>Cell Simulation</h2>
+            </div>
+            <div class="project_description">
+                <div class="quick_info">
+                    <p>
+                        Language: <span>Python</span> <br><br>
+                        Packages Used:<span>Multiprocessing, Time</span> <br><br>
+                        IDE/Editor: <span>VS Code</span>
+                    </p>
+                    
+                </div>
+                <div class="summary">
+                    <p>
+                        Using the <span onclick='scrollFunction("sim_rules");' style="cursor: pointer; text-decoration: underline; color:white;">rules</span> 
+                        below, the program simulates what state a cell will be in the next step, for 100 steps.
+                        <br><br>
+                        If we were to handle this problem serially, scaling up the input would take exponentially longer. By
+                        making use of python's <code style="font-weight: 700; "> multiprocessing</code> package, using <code style="font-weight: 700;"> Pool</code> to properly manage
+                        and split the input array to the processing functions, I was able to parallelize the program, allowing it to
+                        run exponentially faster.
+                        <br><br>
+                        <span onclick='scrollFunction("embedded_python");' style="cursor:pointer;text-decoration: underline;">Below, you are able to test out the program.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="sim_rules" id="sim_rules">
+                <h2>Rules:</h2>
+                <p>
+                    Each cell has two states:<br>
+                    <code>
+                        &emsp; O : Alive <br>
+                        &emsp; . : Dead
+                    </code>
+                    <br>
+                    A cell's state in the next step will be determined by its neighbors and it's current state:<br>
+                    <code>
+                        &emsp; If alive,  <br>
+                        &emsp; . : Dead
+                    </code>
+                </p>
+            </div>
+            <div class="embedded_python" id="embedded_python">
+                <iframe src="https://repl.it/@RjDeray/CellSimulationCS3361?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>            
+            </div>
+            <div class="footer">
+                <h3 onclick='scrollToTopFunc("project_title");' style="cursor: pointer;">Back to Top</h3>
+            </div>
         </section>
     </body>
 </html>

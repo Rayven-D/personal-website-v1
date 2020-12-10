@@ -19,3 +19,8 @@ body{
     width:100vw;
     overflow:hidden;
 }
+
+.footer{
+    margin: 5vh;
+    text-align: right;
+}

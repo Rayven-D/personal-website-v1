@@ -2,7 +2,6 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .section_title{
     font-size: 2vw;
     font-weight: 700;
@@ -66,7 +65,6 @@ body{
 }
 .projects .container:hover + div{
     opacity:.98;
-    z-index: 2;
     width: 60vw;
     height: 40vh;
     margin: auto auto;
@@ -75,7 +73,6 @@ body{
 
 .projects .overlay_text:hover{
     opacity:.98;
-    z-index: 2;
     width: 60vw;
     height: 40vh;
     margin: auto auto;
@@ -179,8 +176,7 @@ body{
         padding: 2%;
     }
     .projects .container:hover + div{
-        opacity:.98;
-        z-index: 2;
+        opacity:.98;       
         width: 80vw;
         height: 40vh;
         margin: auto auto;
@@ -189,7 +185,6 @@ body{
     
     .projects .overlay_text:hover{
         opacity:.98;
-        z-index: 2;
         width: 80vw;
         height: 40vh;
         margin: auto auto;
@@ -298,7 +293,6 @@ body{
     }
     .projects .container:hover + div{
         opacity:.98;
-        z-index: 2;
         width: 80vw;
         height: 40vh;
         margin: auto auto;
@@ -307,7 +301,6 @@ body{
     
     .projects .overlay_text:hover{
         opacity:.98;
-        z-index: 2;
         width: 80vw;
         height: 40vh;
         margin: auto auto;

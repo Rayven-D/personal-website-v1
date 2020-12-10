@@ -1,0 +1,17 @@
+.project_description .quick_info p{
+    font-size: 1.5vw;
+    text-align: left;
+    font-weight: 500;
+    padding: 10%;
+}
+
+.embedded_python{
+    width: 80vw;
+    margin:0 auto;
+    height: 60vh;
+}
+
+.embedded_python iframe{
+    height: 400px;
+    width: 50%;
+}
