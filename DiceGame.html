@@ -3,29 +3,51 @@
     <head>
         
         <script language="javascript" type="text/javascript" src="common_stuff/head_links.txt"></script>
-        <script src="/js/header_load.js"></script>
+        <script rel="javascript" src="/js/project_js/common_functions.js"></script>
         <link rel="stylesheet" href="/css/project_css/dicegame.css">
         <link rel="stylesheet" href="/css/project_css/common_project.css">
         <link rel="stylesheet" href="/css/common_format.css">
         <link rel="icon" type="image/png" href="../pictures/logo.png">
-        <title>Socials and Links | Rayven Deray</title>
+        <title>Dice Game | Rayven Deray</title>
     </head>
-    <body onload="starting()">
+    <body >
         <div class="header" id="header">
-            <script language="javascript" type="text/javascript" src="/common_stuff/header.txt"></script>
+            <script language="javascript" type="text/javascript" src="common_stuff/header.js"></script>
         </div>
         <div class="background"></div>
         <section class="main" id="main"> 
-            <div class="project_title">
+            <div class="project_title" id="project_title">
                 <h2>Bang! The Dice Game</h2>
             </div>
             <div class="project_description">
-                <div class="summary">
-                    Summary
-                </div>
                 <div class="quick_info">
-                    Quick Info
+                    <p>
+                        Language: <span>Java</span> <br><br>
+                        Packages Used: <span>JavaFX</span> <br><br>
+                        IDE/Editor: <span>NetBeans</span>
+                    </p>
+                    
                 </div>
+                <div class="summary">
+                    <p>
+                        Using Object-Oriented Programming concepts from class, we had to recreate the entire Bang! The Dice Game
+                        in Java using the original rules, characters, and die. 
+                        <br><br>
+                        We had to use Java to create the game. This was also the first time many team members used GitHub, and was beneficial
+                        due to COVID-19 closing school right after spring break. We decided on splitting up the project into parts and each person worked on 
+                        the separate parts. 
+                        <br><br>
+                        <span onclick='scrollFunction("video_system");' style="cursor:pointer;text-decoration: underline;">Below, you are able to see the runthrough of the project.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="video_system" id="video_system">
+                <h2>Video Runthrough</h2>
+                <div class="video">
+                    <iframe width="1228" height="691" src="https://www.youtube.com/embed/qwAj4pjth90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            </div>
+            <div class="footer">
+                <h3 onclick='scrollToTopFunc("project_title");' style="cursor: pointer;">Back to Top</h3>
             </div>
         </section>
     </body>

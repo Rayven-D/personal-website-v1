@@ -9,8 +9,10 @@ body{
     display: block;
 }
 .section_title h2{
-    margin: 0;
+    width: 65vw;
+    margin: 0 auto;
     margin-top: 2vh;
+    border-bottom: 4px solid black;
 }
 
 .section_title sub{

@@ -3,17 +3,16 @@
     <head>
         
         <script language="javascript" type="text/javascript" src="common_stuff/head_links.txt"></script>
-        <script src="/js/header_load.js"></script>
         <script rel="javascript" src="/js/project_js/common_functions.js"></script>
         <link rel="stylesheet" href="/css/project_css/cellsimulation.css">
         <link rel="stylesheet" href="/css/project_css/common_project.css">
         <link rel="stylesheet" href="/css/common_format.css">
         <link rel="icon" type="image/png" href="../pictures/logo.png">
-        <title>Socials and Links | Rayven Deray</title>
+        <title>Cell Simulation | Rayven Deray</title>
     </head>
-    <body onload="starting()">
+    <body >
         <div class="header" id="header">
-            <script language="javascript" type="text/javascript" src="/common_stuff/header.txt"></script>
+            <script language="javascript" type="text/javascript" src="common_stuff/header.js"></script>
         </div>
         <div class="background"></div>
         <section class="main" id="main"> 
@@ -24,7 +23,7 @@
                 <div class="quick_info">
                     <p>
                         Language: <span>Python</span> <br><br>
-                        Packages Used:<span>Multiprocessing, Time</span> <br><br>
+                        Packages Used: <span>Multiprocessing, Time</span> <br><br>
                         IDE/Editor: <span>VS Code</span>
                     </p>
                     
@@ -39,7 +38,7 @@
                         and split the input array to the processing functions, I was able to parallelize the program, allowing it to
                         run exponentially faster.
                         <br><br>
-                        <span onclick='scrollFunction("embedded_python");' style="cursor:pointer;text-decoration: underline;">Below, you are able to test out the program.</span>
+                        <span onclick='scrollFunction("sim_test");' style="cursor:pointer;text-decoration: underline;">Below, you are able to test out the program.</span>
                     </p>
                 </div>
             </div>
@@ -51,16 +50,69 @@
                         &emsp; O : Alive <br>
                         &emsp; . : Dead
                     </code>
-                    <br>
+                </p>
+                <p>
                     A cell's state in the next step will be determined by its neighbors and it's current state:<br>
                     <code>
-                        &emsp; If alive,  <br>
-                        &emsp; . : Dead
+                        <ul style="list-style-type: square;">
+                            <li>If the cell is alive and has 2 - 4 alive neighbors, it will stay alive in the next step.  </li>
+                            <li>If the cell is dead and there is an even number >0 of alive neighbors, it will become alive in the next step.</li>
+                            <li>Otherwise, the cell becomes or stays dead.</li>
+                        </ul>
+                    </code>
+                </p>
+                <p>
+                    A cell's neighbors are as follows:<br>
+                    <code>
+                        &emsp;&emsp; _ _ _ _ _ &emsp;&emsp;C N _ _ N <br>
+                        &emsp;&emsp; _ N N N _ &emsp;&emsp;N N _ _ N <br>
+                        &emsp;&emsp; _ N C N _ &emsp;&emsp;_ _ _ _ _ <br>
+                        &emsp;&emsp; _ N N N _ &emsp;&emsp;_ _ _ _ _ <br>
+                        &emsp;&emsp; _ _ _ _ _ &emsp;&emsp;N N _ _ N <br>
                     </code>
                 </p>
             </div>
-            <div class="embedded_python" id="embedded_python">
-                <iframe src="https://repl.it/@RjDeray/CellSimulationCS3361?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>            
+            <div class="sim_test" id="sim_test">
+                <h2>Simulation Test</h2>
+                <div class="embedded_python" id="embedded_python">
+                    <p>
+                        To run the simulation, click the green play button on the top.
+                        <br><br>
+                        Follow the promt on the screen. 
+                        <br><br>
+                        After everything is done it will display how long it took. 
+                        <br>
+                        <sup><sub>Times might be slower than times from the HPCC @TTU</sub></sup>
+                    </p>
+                    <iframe src="https://repl.it/@RjDeray/CellSimulationCS3361?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>            
+                </div>
+            </div>
+            <div class="current_times" id="current_times">
+                <h2>Current Times</h2>
+                <code>
+                    100x100 array<br>
+                    &emsp;1   thread:&emsp;&emsp;2.870863284<br>
+                    &emsp;2   threads:&emsp;&emsp;.880522093 <br>
+                    &emsp;4   threads:&emsp;&emsp;.666691255 <br>
+                    &emsp;8   threads:&emsp;&emsp;.492846057  <br>
+                    &emsp;16  threads:&emsp;&emsp;.681837124 <br>
+                    &emsp;32  threads:&emsp;&emsp;.976690614 <br>
+
+                    1000x1000 array<br>
+                    &emsp;1   thread:&emsp;&emsp;117.039384358  <br>
+                    &emsp;2   threads:&emsp;&emsp;66.319961146 <br>
+                    &emsp;4   threads:&emsp;&emsp;38.543000157 <br>
+                    &emsp;8   threads:&emsp;&emsp;24.232261485 <br>
+                    &emsp;16  threads:&emsp;&emsp;14.619499583 <br>
+                    &emsp;32  threads:&emsp;&emsp;11.542806292 <br>
+
+                    10000x10000 array<br>
+                    &emsp;9   threads:&emsp;&emsp;1749.598217939 <br>
+                    &emsp;18  threads:&emsp;&emsp;1089.754576722  <br>
+                    &emsp;36  threads:&emsp;&emsp;835.519872763 <br>
+                    <br>
+                    &emsp; Wall-Clock Time: ~ 1h 7m
+                </code>
             </div>
             <div class="footer">
                 <h3 onclick='scrollToTopFunc("project_title");' style="cursor: pointer;">Back to Top</h3>

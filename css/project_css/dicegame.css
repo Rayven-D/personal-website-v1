@@ -1,0 +1,15 @@
+.video_system{
+    width: 80vw;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.video{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+.video iframe{
+    width: 100%;
+    height: 100%;
+}

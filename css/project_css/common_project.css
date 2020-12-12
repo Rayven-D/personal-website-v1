@@ -3,12 +3,20 @@ body{
     cursor: context-menu;
 }
 
+h2{
+    font-size: 2vw;
+    padding: 1%;
+}
 
 .project_title h2{
     margin-top: 2vw;
     font-size: 3vw;
-    margin-left: 10vw;
+    margin: 0 auto;
+    width: 80vw;
+    border-bottom: 3px solid black;
+
 }
+
 
 .project_description{
     width:80vw;
@@ -40,18 +48,3 @@ body{
     font-weight: 700;
 }
 
-.sim_rules{
-    width: 80vw;
-    height: 40vw;
-    margin:0 auto;
-    background-color: pink;
-}
-
-.sim_rules h2{
-    font-size: 1.75vw;
-}
-
-.sim_rules p{
-    font-size: 1.5vw;
-    font-weight: 500;
-}
