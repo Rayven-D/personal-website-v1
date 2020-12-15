@@ -46,6 +46,7 @@ Navigation tabs on the right side.
 .navigation{
     height: 100%;
     text-align: right;
+    z-index: 100;
     
 }
 .navigation a, i{
@@ -103,10 +104,10 @@ Navigation tabs on the right side.
 
 #chk, #chk_l{
     visibility: hidden;
-    z-index: -1111;
+    z-index: 0;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1400px){
     .inner_header{
         width: 100%;
     }

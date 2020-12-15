@@ -115,7 +115,6 @@ body{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
-    
     .section_title{
         font-size: 4vw;
         font-weight: 700;
@@ -123,8 +122,10 @@ body{
         display: block;
     }
     .section_title h2{
-        margin: 0;
+        width: 65vw;
+        margin: 0 auto;
         margin-top: 2vh;
+        border-bottom: 4px solid black;
     }
     
     .section_title sub{
@@ -148,7 +149,7 @@ body{
         flex-flow: row wrap;
     }
     .projects .container{
-        width: 50vw;
+        width: 80vw;
         height: 6vw;
         margin:0 auto;
         position: relative;;
@@ -162,7 +163,7 @@ body{
     
     .projects .overlay_text{
         margin: auto auto;
-        top:0;
+        top:0vw;
         position: relative;
     
         height:0;
@@ -178,7 +179,7 @@ body{
         padding: 2%;
     }
     .projects .container:hover + div{
-        opacity:.98;       
+        opacity:.98;
         width: 80vw;
         height: 40vh;
         margin: auto auto;
@@ -212,7 +213,7 @@ body{
         color: white;
     }
     .overlay_text p span{
-        font-size:1.5vw;
+        font-size:1.75vw;
         margin:0;
     }
      .overlay_text:hover .project_pics, .container:hover + div .project_pics{
@@ -231,25 +232,25 @@ body{
     body{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    
-    
     .section_title{
-        font-size: 4vw;
+        font-size: 6vw;
         font-weight: 700;
         text-align: center;
         display: block;
     }
     .section_title h2{
-        margin: 0;
+        width: 65vw;
+        margin: 0 auto;
         margin-top: 2vh;
+        border-bottom: 4px solid black;
     }
     
     .section_title sub{
-        display:none;
+        display: none;
     }
     
     .project_title{
-        font-size: 200%;
+        font-size: 5vw;
         text-align: center;
         width: auto;
         height: auto;
@@ -264,78 +265,34 @@ body{
         flex-flow: row wrap;
     }
     .projects .container{
-        width: 70vw;
+        width: 60vw;
         height: 6vw;
         margin:0 auto;
-        position: relative;;
+        position: relative;
         align-items: center;
     }
     
     .projects .container a{
         text-decoration: none;
         
-    }
-    
+    }    
     .projects .overlay_text{
-        margin: auto auto;
-        top:3vw;
-        position: relative;
-    
-        height:0;
-        width:0;
-        opacity: 0;
-        transition: .5s ease;
-        background-color:#4a98cf;
-        text-align:left;
-        display:grid;
-        grid-template-columns: auto auto auto;
-        justify-items: center;
-        align-items: center;
-        padding: 2%;
+        display:none;
     }
     .projects .container:hover + div{
-        opacity:.98;
-        width: 80vw;
-        height: 40vh;
-        margin: auto auto;
+        display:none;
     
     }
     
     .projects .overlay_text:hover{
-        opacity:.98;
-        width: 80vw;
-        height: 40vh;
-        margin: auto auto;
+        color:white;
     }
     
     .projects .container:hover .project_title{
         color:white;
+    }    
+    .footer{
+        font-size: 2vw;
     }
-    
-    .overlay_text .overlay_description{
-        font-weight: 700;
-        font-size: 0;
-    }
-    
-    .overlay_text:hover .overlay_description, .container:hover + div .overlay_description{
-        font-size:80%;
-        transition: .5s ease;
-    }
-    
-    .projects .overlay_text .project_pics{
-        height: 0;
-        width: 0;
-        color: white;
-    }
-    .overlay_text p span{
-        font-size:1.5vw;
-        margin:0;
-    }
-     .overlay_text:hover .project_pics, .container:hover + div .project_pics{
-         height: 70%;
-         width: 60%;
-         
-     }
-    
  }
 
