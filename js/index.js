@@ -27,7 +27,7 @@ function printGreeting(i){
                 element.style.fontSize = defaultFontSize;
             }
         }, 2000/((i+1)*1.75));
-        setTimeout(resolve, 2000/((i+1)*1.75));
+        setTimeout(resolve, 2000/((i+1)*2));
     });
 }
 
